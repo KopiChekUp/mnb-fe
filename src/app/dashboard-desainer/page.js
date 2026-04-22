@@ -45,20 +45,21 @@ export default function DashboardDesainer() {
 
           {/* Menu Navigasi */}
           <nav className="flex flex-col gap-1 px-4">
-            <Link href="/dashboard-desainer" className="flex items-center gap-3 bg-yellow-400 text-gray-900 font-bold px-4 py-3 rounded-xl shadow-sm transition">
-              <span>🎛️</span> Dashboard
+            <Link href="/" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
+              <span><img src="/dashboard-icon.png" alt="Dashboard" className="w-5 h-5" /></span> Beranda
             </Link>
             <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span>💼</span> Portofolio
+              <span><img src="/pesanan-icon.png" alt="Proyek Saya" className="w-5 h-5" /></span> Proyek Saya
+            </a>
+            {/* Menu Aktif */}
+            <a href="#" className="flex items-center gap-3 bg-yellow-50 text-yellow-700 font-bold px-4 py-3 rounded-xl border border-yellow-100 transition">
+              <span><img src="/icon-desainer.svg" alt="Desainer" className="w-5 h-5" /></span> Desainer
             </a>
             <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span>📄</span> Pesanan
+              <span><img src="/chat-icon.png" alt="Pesan" className="w-5 h-5" /></span> Pesan Saya
             </a>
             <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span>💬</span> Chat
-            </a>
-            <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span>👤</span> Profil
+              <span><img src="/icon-setting.svg" alt="Pengaturan" className="w-5 h-5" /></span> Pengaturan
             </a>
           </nav>
         </div>
