@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Profil() {
   return (
-    // Wadah Utama (Background abu-abu super soft)
+    // Wadah Utama 
     <div className="min-h-screen bg-[#F8F9FA] font-sans text-gray-800 flex flex-col">
       
       {/* --- NAVBAR GLOBAL (Atas) --- */}
@@ -17,7 +17,7 @@ export default function Profil() {
         
         <div className="flex items-center gap-4">
           <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 transition">
-            🔔
+            <img src="icon-lonceng.svg" alt="Notifications" className="w-5 h-5" />
           </button>
           <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 transition overflow-hidden bg-gray-100">
             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" alt="Profil" className="w-full h-full object-cover" />
@@ -38,19 +38,19 @@ export default function Profil() {
           <nav className="flex flex-col gap-2">
             {/* Menu Aktif (Profile) */}
             <Link href="/profil" className="flex items-center gap-3 bg-yellow-400 text-gray-900 font-bold px-5 py-3 rounded-xl shadow-sm transition">
-              <span>👤</span> Profile
+              <span><img src="profile-icon.svg" alt="Profile" className="w-5 h-5" /></span> Profile
             </Link>
             <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-5 py-3 rounded-xl transition">
-              <span>🛡️</span> Security
+              <span><img src="icon-security.svg" alt="Security" className="w-5 h-5" /></span> Security
             </a>
             <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-5 py-3 rounded-xl transition">
-              <span>🔔</span> Notifications
+              <span><img src="icon-lonceng.svg" alt="Notifications" className="w-5 h-5" /></span> Notifications
             </a>
             <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-5 py-3 rounded-xl transition">
-              <span>⭐</span> Subscription
+              <span><img src="icon-subs.svg" alt="S" className="w-5 h-5" /></span> Subscription
             </a>
             <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-5 py-3 rounded-xl transition">
-              <span>🔒</span> Privacy
+              <span><img src="icon-privacy.svg" alt="Privacy" className="w-5 h-5" /></span> Privacy
             </a>
           </nav>
 
@@ -75,7 +75,7 @@ export default function Profil() {
                   </div>
                   {/* Ikon Edit Pensil Melayang */}
                   <button className="absolute bottom-0 right-0 w-8 h-8 bg-yellow-400 rounded-full border-2 border-white flex items-center justify-center text-xs hover:bg-yellow-500 transition shadow-sm">
-                    ✏️
+                    <img src="profil-singkat-icon.svg" alt="Edit" className="w-4 h-4" />
                   </button>
                 </div>
                 <div>
