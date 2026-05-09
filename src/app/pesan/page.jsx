@@ -24,46 +24,45 @@ export default function Pesan() {
     <div className="flex h-screen bg-white text-gray-800 font-sans overflow-hidden">
       
       {/* --- KOLOM 1: SIDEBAR MENU --- */}
-      <aside className="w-64 border-r border-gray-100 flex flex-col justify-between flex-shrink-0 bg-white z-20">
-        <div>
-          {/* Logo */}
-          <div className="p-6 flex items-center gap-3 mb-4">
-            <span className="text-2xl font-bold text-yellow-600 italic"> <img src="/logo.png" alt="Logo Match and Build" className="w-12 h-12 object-contain rounded-md"/></span>
-            <div>
-              <h1 className="font-extrabold leading-none text-black text-sm">Match n Build</h1>
-              <p className="text-[10px] text-gray-500 mt-0.5">Marketplace Arsitektur</p>
-            </div>
-          </div>
-
-          {/* Menu */}
-          <nav className="flex flex-col gap-1 px-4">
-            <Link href="/" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span><img src="/dashboard-icon.png" alt="Dashboard" className="w-5 h-5" /></span> Beranda
-            </Link>
-            <Link href="/pesanansaya" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span><img src="/pesanan-icon.png" alt="Pesanan Saya" className="w-5 h-5" /></span> Proyek
-            </Link>
-            {/* Menu Pesan Aktif */}
-            <Link href="/pesan" className="flex items-center gap-3 bg-yellow-400 text-gray-900 font-bold px-4 py-3 rounded-xl shadow-sm transition">
-              <span><img src="/chat-icon.png" alt="Chat" className="w-5 h-5" /></span> Pesan
-            </Link>
-            <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span><img src="/rekomendasi-icon.png" alt="Rekomendasi" className="w-5 h-5" /></span> Rekomendasi
-            </a>
-            <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-50 font-medium px-4 py-3 rounded-xl transition">
-              <span><img src="/profile-icon.svg" alt="Profil" className="w-5 h-5" /></span> Profil
-            </a>
-          </nav>
-        </div>
-
-        {/* Profil Bawah */}
-        <div className="p-6 border-t border-gray-100 flex items-center gap-3">
-          <div className="w-10 h-10 bg-orange-200 rounded-full flex items-center justify-center text-sm">🏢</div>
+      <aside className="w-64 bg-white border-r border-gray-100 flex flex-col px-6 py-8">
+        {/* Logo */}
+        <div className="flex items-center gap-3 mb-10">
+          <img 
+            src="/logo.png" 
+            alt="Logo Match and Build" 
+            className="w-12 h-12 object-contain rounded-md"
+          />
           <div>
-            <p className="text-sm font-bold text-gray-800 leading-tight">Andi Wijaya</p>
-            <p className="text-[10px] text-gray-500">Klien</p>
+            <h1 className="font-extrabold leading-none text-black">Match n Build</h1>
+            <p className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">MnB Client Portal</p>
           </div>
         </div>
+
+        {/* Menu */}
+        <nav className="flex flex-col gap-2">
+          {/* Menu tidak aktif */}
+          <a href="./" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-4 py-3 rounded-xl transition">
+            <img src="/dashboard-icon.png" alt="Dashboard" className="w-5 h-5" /> Dashboard
+          </a>
+          
+          {/* Menu tidak aktif */}
+          <a href="/pesanansaya" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-4 py-3 rounded-xl transition">
+            <img src="/icon-pesanan-aktif-kuning.svg" alt="Proyek Saya" className="w-5 h-5" /> Proyek Saya
+          </a>
+          {/* Menu aktif */}
+          <a href="/pesan" className="flex items-center gap-3 bg-yellow-50 text-yellow-500 font-bold px-4 py-3 rounded-xl border border-yellow-100">
+            <img src="/chat-icon.png" alt="Chat" className="w-5 h-5" /> Pesan Saya
+          </a>
+          <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-4 py-3 rounded-xl transition">
+            <img src="/rekomendasi-icon.png" alt="Rekomendasi" className="w-5 h-5" /> Rekomendasi
+          </a>
+          <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-4 py-3 rounded-xl transition">
+            <img src="/profile-icon.svg" alt="Profil" className="w-5 h-5" /> Profil
+          </a>
+          <a href="#" className="flex items-center gap-3 text-gray-500 hover:bg-gray-100 font-medium px-4 py-3 rounded-xl transition">
+            <img src="/settings-icon.png" alt="Pengaturan" className="w-5 h-5" /> Pengaturan
+          </a>
+        </nav>
       </aside>
 
       {/* --- KOLOM 2: DAFTAR INBOX --- */}

@@ -25,7 +25,7 @@ export default function LoginForm() {
       if (res.data.role === "designer") {
         router.push("/dashboard-desainer")
       } else {
-        router.push("/")
+        router.push("/dashboard-client")
       }
     } catch (err) {
       setError(err.message);

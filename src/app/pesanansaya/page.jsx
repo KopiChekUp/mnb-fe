@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function ProyekSaya() {
-  // BUKU DAFTAR PROYEK (Biar gampang diedit)
   const daftarProyek = [
     {
       id: 1,
