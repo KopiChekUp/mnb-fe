@@ -36,9 +36,11 @@ export default function LoginForm() {
 
   return (
     <div className="w-full lg:w-1/2 flex flex-col justify-center px-10 sm:px-20 lg:px-24 xl:px-32 relative z-10">
-      <div className="mb-8">
-        <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain rounded-md" />
-      </div>
+      <Link href={"/"}>
+        <div className="mb-8">
+          <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain rounded-md" />
+        </div>
+      </Link>
 
       <h1 className="text-4xl font-serif text-gray-900 leading-tight mb-4">
         Elevate Your Space with Our Exquisite Design
@@ -95,7 +97,7 @@ export default function LoginForm() {
         </div>
         <div className="mt-3">
           <Link href="/signup" className="text-sm text-gray-600 underline hover:text-black font-medium">
-            Don't have an account? Sign Up
+            Do not have an account? Sign Up
           </Link>
         </div>
       </form>

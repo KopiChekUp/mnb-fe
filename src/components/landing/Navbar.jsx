@@ -52,7 +52,7 @@ export function Navbar() {
               color: "#1A1A18",
             }}
           >
-            matchAndBuild
+            MatchAndBuild
           </span>
         </Link>
 

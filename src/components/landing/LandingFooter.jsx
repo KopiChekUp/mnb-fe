@@ -139,7 +139,7 @@ export function LandingFooter() {
                 lineHeight: 1,
               }}
             >
-              matchAndBuild
+              MatchAndBuild
             </span>
           </div>
         </div>
