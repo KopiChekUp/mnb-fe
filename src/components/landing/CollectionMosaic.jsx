@@ -15,7 +15,7 @@ const COLLECTION = [
 export function CollectionMosaic() {
   return (
     <section id="collection" style={{ padding: "80px 40px", maxWidth: "1280px", margin: "0 auto" }}>
-      {/* Header row */}
+      
       <div
         style={{
           display: "flex",
@@ -76,7 +76,7 @@ export function CollectionMosaic() {
         </div>
       </div>
 
-      {/* Mosaic grid */}
+      
       <div className="mosaic-grid">
         {COLLECTION.map((item, i) => (
           <CollectionCard key={i} {...item} />
@@ -128,7 +128,7 @@ function CollectionCard({ name, image, tall }) {
         style={{ objectFit: "cover", transition: "transform 0.5s ease" }}
         className="card-image"
       />
-      {/* Hover overlay */}
+      
       <div className="card-overlay" style={{
         position: "absolute",
         inset: 0,
@@ -136,7 +136,7 @@ function CollectionCard({ name, image, tall }) {
         opacity: 0,
         transition: "opacity 0.3s ease",
       }} />
-      {/* Bottom row */}
+      
       <div
         style={{
           position: "absolute",

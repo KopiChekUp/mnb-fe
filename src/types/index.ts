@@ -1,7 +1,3 @@
-// =============================================================================
-// Shared Types — Match n Build
-// =============================================================================
-
 export type UserRole = 'client' | 'designer';
 
 export interface User {
@@ -22,10 +18,6 @@ export interface AuthResponse {
   data: AuthTokens;
 }
 
-// -----------------------------------------------------------------------------
-// Designer
-// -----------------------------------------------------------------------------
-
 export interface Designer {
   id: string | number;
   name: string;
@@ -38,10 +30,6 @@ export interface Designer {
   avatar?: string;
   tags: string[];
 }
-
-// -----------------------------------------------------------------------------
-// Project / Order
-// -----------------------------------------------------------------------------
 
 export type ProjectStatus =
   | 'PERSIAPAN'
@@ -73,10 +61,6 @@ export interface Order {
   status: OrderStatus;
 }
 
-// -----------------------------------------------------------------------------
-// Notification
-// -----------------------------------------------------------------------------
-
 export interface Notification {
   id: string | number;
   title: string;
@@ -87,19 +71,11 @@ export interface Notification {
   hoverColor: string;
 }
 
-// -----------------------------------------------------------------------------
-// Sidebar Navigation
-// -----------------------------------------------------------------------------
-
 export interface MenuItem {
   href: string;
   icon: string;
   label: string;
 }
-
-// -----------------------------------------------------------------------------
-// API
-// -----------------------------------------------------------------------------
 
 export interface ApiError {
   error?: string;

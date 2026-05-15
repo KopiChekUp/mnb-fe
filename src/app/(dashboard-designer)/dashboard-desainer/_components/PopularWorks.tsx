@@ -18,7 +18,7 @@ export default function PopularWorks({ items }: PopularWorksProps) {
         {items.map((item) => (
           <div key={item.id} className="group cursor-pointer">
             <div className="relative h-32 rounded-2xl overflow-hidden mb-3">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+              
               <img
                 src={item.image}
                 alt={item.title}

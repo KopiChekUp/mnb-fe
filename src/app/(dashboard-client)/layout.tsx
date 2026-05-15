@@ -1,9 +1,6 @@
 import ClientSidebar from '@/components/layout/ClientSidebar';
 
-/**
- * (dashboard-client) layout — Shared layout untuk semua halaman client dashboard.
- * Sidebar otomatis dirender, setiap halaman hanya perlu fokus pada kontennya.
- */
+
 export default function DashboardClientLayout({
   children,
 }: {

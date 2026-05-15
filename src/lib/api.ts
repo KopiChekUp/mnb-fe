@@ -16,7 +16,6 @@ export async function apiCall<T = unknown>(
   const url = `${API_URL}${endpoint}`;
   const { body, ...restOptions } = options;
 
-  // Serialize body jika berupa plain object
   const serializedBody: BodyInit | null | undefined =
     body && typeof body === 'object' && !(body instanceof FormData) && !(body instanceof URLSearchParams)
       ? JSON.stringify(body)
@@ -45,7 +44,6 @@ export async function apiCallWithAuth<T = unknown>(
   endpoint: string,
   options: FetchOptions = {}
 ): Promise<T> {
-  // Guard: localStorage hanya tersedia di browser
   const token =
     typeof window !== 'undefined' ? localStorage.getItem('token') : null;
 

@@ -41,7 +41,7 @@ export function Navbar() {
           justifyContent: "space-between",
         }}
       >
-        {/* Logo */}
+        
         <Link href={ROUTES.HOME} style={{ textDecoration: "none" }}>
           <span
             style={{
@@ -56,7 +56,7 @@ export function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop nav */}
+        
         <div
           style={{
             display: "flex",
@@ -103,7 +103,7 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
+        
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
@@ -124,7 +124,7 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      
       {menuOpen && (
         <div
           style={{

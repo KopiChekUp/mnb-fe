@@ -14,7 +14,7 @@ export default function RevenueChart() {
         </select>
       </div>
 
-      {/* Dummy Area Chart */}
+      
       <div className="flex-1 relative min-h-[200px] flex items-end pt-10">
         <div
           className="absolute bottom-6 left-0 right-0 h-3/4 bg-gradient-to-t from-yellow-100/60 to-transparent"

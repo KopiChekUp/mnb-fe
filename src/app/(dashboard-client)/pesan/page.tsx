@@ -36,7 +36,7 @@ const messages: ChatMessage[] = [
 export default function PesanPage() {
   return (
     <div className="flex flex-1 overflow-hidden">
-      {/* Inbox List */}
+      
       <aside className="w-80 border-r border-gray-100 flex flex-col flex-shrink-0 bg-white z-10">
         <div className="p-6 border-b border-gray-100">
           <h2 className="text-xl font-extrabold text-black mb-4">Pesan</h2>
@@ -52,7 +52,7 @@ export default function PesanPage() {
               className={`p-4 flex gap-4 cursor-pointer border-l-4 transition-all ${chat.isActive ? 'bg-gray-50 border-yellow-400' : 'border-transparent hover:bg-gray-50'}`}
             >
               <div className="relative">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src={chat.avatar} alt={chat.name} className="w-12 h-12 rounded-full object-cover" />
                 {chat.isActive && <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full" />}
               </div>
@@ -68,11 +68,11 @@ export default function PesanPage() {
         </div>
       </aside>
 
-      {/* Chat Room */}
+      
       <main className="flex-1 flex flex-col bg-[#F9F9F9]">
         <header className="px-8 py-5 bg-white border-b border-gray-100 flex justify-between items-center shadow-sm z-10">
           <div className="flex items-center gap-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+            
             <img src={contacts[0].avatar} alt="Budi" className="w-10 h-10 rounded-full object-cover" />
             <div>
               <h2 className="text-sm font-extrabold text-gray-900">Budi Santoso (Arsitek)</h2>
@@ -101,7 +101,7 @@ export default function PesanPage() {
             if (msg.type === 'incoming') {
               return (
                 <div key={msg.id} className="flex items-end gap-3 max-w-2xl">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  
                   <img src={msg.avatar} alt="Avatar" className="w-8 h-8 rounded-full object-cover" />
                   <div>
                     <div className="bg-white p-4 rounded-2xl rounded-bl-none shadow-sm border border-gray-100 text-sm text-gray-700 leading-relaxed">{msg.text}</div>

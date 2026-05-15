@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 export default function DesainerDetailPage() {
   return (
     <main className="flex-1 flex flex-col min-w-0 overflow-y-auto">
-      {/* Hero Banner */}
+      
       <div className="relative h-64 lg:h-80 w-full flex-shrink-0 bg-gray-900">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        
         <img
           src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=400&fit=crop"
           alt="Banner Desainer"
@@ -20,7 +20,7 @@ export default function DesainerDetailPage() {
         <div className="absolute bottom-0 left-0 right-0 p-8 flex justify-between items-end bg-gradient-to-t from-black/80 to-transparent">
           <div className="flex items-end gap-6">
             <div className="w-24 h-24 rounded-2xl border-4 border-white overflow-hidden bg-gray-200 shadow-lg">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+              
               <img
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop"
                 alt="Budi Santoso"
@@ -30,7 +30,7 @@ export default function DesainerDetailPage() {
             <div className="text-white mb-1">
               <h1 className="text-3xl font-extrabold flex items-center gap-2">
                 Budi Santoso{' '}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src="/icon-ceklis.svg" alt="Verified" className="w-5 h-5" />
               </h1>
               <p className="text-sm opacity-90 mt-1">Desainer Interior Senior • 8+ Tahun Pengalaman</p>
@@ -52,11 +52,11 @@ export default function DesainerDetailPage() {
         </div>
       </div>
 
-      {/* Body Content */}
+      
       <div className="p-8 flex flex-col lg:flex-row gap-10 max-w-7xl mx-auto w-full">
-        {/* Left Column */}
+        
         <div className="flex-1 space-y-12">
-          {/* About */}
+          
           <section>
             <h2 className="text-xl font-extrabold mb-4 flex items-center gap-2">
               <div className="w-4 h-1 bg-yellow-400 rounded-full" /> Tentang Desainer
@@ -75,7 +75,7 @@ export default function DesainerDetailPage() {
             </div>
           </section>
 
-          {/* Portfolio */}
+          
           <section>
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-extrabold flex items-center gap-2">
@@ -85,22 +85,22 @@ export default function DesainerDetailPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=600&fit=crop" className="w-full rounded-2xl object-cover h-64" alt="Karya 1" />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=400&fit=crop" className="w-full rounded-2xl object-cover h-40" alt="Karya 2" />
               </div>
               <div className="space-y-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop" className="w-full rounded-2xl object-cover h-32" alt="Karya 3" />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=400&fit=crop" className="w-full rounded-2xl object-cover h-72" alt="Karya 4" />
               </div>
             </div>
           </section>
         </div>
 
-        {/* Right Column — Pricing */}
+        
         <aside className="w-full lg:w-96">
           <div className="sticky top-8 space-y-6">
             <div className="bg-white border border-gray-200 rounded-3xl p-6 shadow-xl shadow-gray-100/50">
@@ -121,13 +121,13 @@ export default function DesainerDetailPage() {
               <ul className="space-y-3 mb-8">
                 {['Konsultasi 60 Menit', 'Layout Plan 2D', 'Moodboard Material'].map((feat) => (
                   <li key={feat} className="flex items-center gap-3 text-sm text-gray-700 font-medium">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    
                     <img src="/icon-pembayaran-verif.svg" alt="✓" className="w-5 h-5" />
                     {feat}
                   </li>
                 ))}
                 <li className="flex items-center gap-3 text-sm text-gray-400 font-medium line-through">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  
                   <img src="/icon-x.svg" alt="✗" className="w-5 h-5 opacity-40" />
                   3D Rendering (2 View)
                 </li>

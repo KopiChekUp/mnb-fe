@@ -8,12 +8,10 @@ interface RecentOrdersProps {
 
 export default function RecentOrders({ orders }: RecentOrdersProps) {
   const handleAccept = (orderId: string | number) => {
-    // TODO: Integrasi API — terima pesanan
     console.log('Terima pesanan:', orderId);
   };
 
   const handleReject = (orderId: string | number) => {
-    // TODO: Integrasi API — tolak pesanan
     console.log('Tolak pesanan:', orderId);
   };
 

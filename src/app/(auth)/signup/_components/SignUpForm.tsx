@@ -64,7 +64,7 @@ export default function SignUpForm() {
           </div>
         )}
 
-        {/* Role Selection */}
+        
         <div className="flex gap-4 mb-6">
           {(['client', 'designer'] as UserRole[]).map((r) => (
             <label

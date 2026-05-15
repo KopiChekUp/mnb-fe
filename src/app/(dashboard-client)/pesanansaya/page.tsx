@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   description: 'Pantau progres semua proyek desain Anda bersama Match n Build.',
 };
 
-// TODO: Fetch dari API
 const projects: Project[] = [
   {
     id: 1,
@@ -70,7 +69,7 @@ export default function PesananSayaPage() {
                 className="border border-gray-200 rounded-3xl p-5 flex items-center gap-6 hover:shadow-md transition-shadow bg-white"
               >
                 <div className="w-28 h-28 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-100">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  
                   <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover" />
                 </div>
 

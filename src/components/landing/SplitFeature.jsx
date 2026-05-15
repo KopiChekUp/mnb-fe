@@ -7,7 +7,7 @@ export function SplitFeature() {
   return (
     <section style={{ padding: "80px 40px", maxWidth: "1280px", margin: "0 auto" }}>
       <div className="split-grid">
-        {/* Left — image */}
+        
         <div
           style={{
             position: "relative",
@@ -25,7 +25,7 @@ export function SplitFeature() {
           />
         </div>
 
-        {/* Right — text */}
+        
         <div
           style={{
             display: "flex",

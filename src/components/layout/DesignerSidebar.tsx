@@ -26,7 +26,7 @@ export default function DesignerSidebar() {
   return (
     <aside className="w-64 bg-white border-r border-gray-100 flex flex-col justify-between flex-shrink-0 z-20">
       <div>
-        {/* Logo */}
+        
         <div className="p-6 flex items-center gap-3 mb-4">
           <span className="text-2xl font-bold text-yellow-600 italic">MB</span>
           <div>
@@ -35,7 +35,7 @@ export default function DesignerSidebar() {
           </div>
         </div>
 
-        {/* Navigation */}
+        
         <nav className="flex flex-col gap-1 px-4">
           {menuItems.map((item) => {
             const isActive = pathname === item.href || pathname.startsWith(item.href + '/');
@@ -57,7 +57,7 @@ export default function DesignerSidebar() {
         </nav>
       </div>
 
-      {/* Profile + Logout */}
+      
       <div className="p-6 border-t border-gray-100 space-y-3">
         <div className="flex items-center gap-3">
           <Image

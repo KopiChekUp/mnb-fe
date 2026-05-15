@@ -26,7 +26,7 @@ export default function ClientSidebar() {
   return (
     <aside className="w-64 bg-white border-r border-gray-100 flex flex-col justify-between flex-shrink-0 z-20">
       <div>
-        {/* Logo */}
+        
         <div className="p-6 flex items-center gap-3 mb-4">
           <Image
             src="/logo.png"
@@ -43,7 +43,7 @@ export default function ClientSidebar() {
           </div>
         </div>
 
-        {/* Navigation */}
+        
         <nav className="flex flex-col gap-1 px-4">
           {menuItems.map((item) => {
             const isActive = pathname === item.href || pathname.startsWith(item.href + '/');
@@ -65,7 +65,7 @@ export default function ClientSidebar() {
         </nav>
       </div>
 
-      {/* Logout Button */}
+      
       <div className="p-6 border-t border-gray-100">
         <button
           onClick={handleLogout}

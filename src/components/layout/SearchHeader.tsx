@@ -1,5 +1,3 @@
-// SearchHeader adalah Server Component — tidak butuh 'use client'
-// Input di dalam komponen ini yang butuh interaktivitas sudah di-handle oleh browser natively
 
 interface SearchHeaderProps {
   title: string;

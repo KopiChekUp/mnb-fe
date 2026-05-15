@@ -23,10 +23,7 @@ export async function registerUser(
   });
 }
 
-/**
- * Logout: hapus semua token dari localStorage.
- * Navigasi dilakukan oleh caller menggunakan `router.push('/login')`.
- */
+
 export function clearAuthTokens(): void {
   if (typeof window === 'undefined') return;
   localStorage.removeItem('token');

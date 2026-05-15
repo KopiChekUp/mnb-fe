@@ -7,7 +7,7 @@ export function FeatureGrid() {
   return (
     <section style={{ padding: "0 40px 80px", maxWidth: "1280px", margin: "0 auto" }}>
       <div className="feature-grid">
-        {/* Left — tall image card */}
+        
         <div
           style={{
             position: "relative",
@@ -23,7 +23,7 @@ export function FeatureGrid() {
             fill
             style={{ objectFit: "cover" }}
           />
-          {/* Bottom gradient */}
+          
           <div
             style={{
               position: "absolute",
@@ -31,7 +31,7 @@ export function FeatureGrid() {
               background: "linear-gradient(to top, rgba(26,26,24,0.5) 0%, transparent 55%)",
             }}
           />
-          {/* Badge */}
+          
           <div
             style={{
               position: "absolute",
@@ -49,7 +49,7 @@ export function FeatureGrid() {
           >
             Gorgeous Interior
           </div>
-          {/* Heading */}
+          
           <div style={{ position: "absolute", bottom: "28px", left: "28px", zIndex: 2 }}>
             <h2
               style={{
@@ -69,9 +69,9 @@ export function FeatureGrid() {
           </div>
         </div>
 
-        {/* Right — stack of 2 cards */}
+        
         <div className="feature-right">
-          {/* Card 1 — text card */}
+          
           <div
             style={{
               backgroundColor: "#F0EAE0",
@@ -121,7 +121,7 @@ export function FeatureGrid() {
             </h3>
           </div>
 
-          {/* Card 2 — image with overlay */}
+          
           <div
             style={{
               position: "relative",
@@ -137,7 +137,7 @@ export function FeatureGrid() {
               fill
               style={{ objectFit: "cover" }}
             />
-            {/* Gradient */}
+            
             <div
               style={{
                 position: "absolute",
@@ -145,7 +145,7 @@ export function FeatureGrid() {
                 background: "linear-gradient(to top, rgba(26,26,24,0.55) 0%, transparent 50%)",
               }}
             />
-            {/* Bottom-left label */}
+            
             <div
               style={{
                 position: "absolute",
@@ -163,7 +163,7 @@ export function FeatureGrid() {
                 Indulge in the artistry
               </p>
             </div>
-            {/* Arrow button */}
+            
             <button
               aria-label="View more"
               style={{

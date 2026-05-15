@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   description: 'Pantau proyek aktif dan temukan desainer terbaik untuk hunian impian Anda.',
 };
 
-// TODO: Ganti dengan API call ketika backend siap
 const activeProjects: Project[] = [
   {
     id: 1,
@@ -78,9 +77,9 @@ const barColors: Record<string, string> = {
 export default function DashboardClientPage() {
   return (
     <div className="flex flex-1 overflow-hidden">
-      {/* ─── Main Content ─── */}
+      
       <section className="flex-1 overflow-y-auto p-10">
-        {/* Header */}
+        
         <div className="flex justify-between items-start mb-10">
           <div>
             <h1 className="text-3xl font-extrabold text-black">Selamat Datang!</h1>
@@ -95,7 +94,7 @@ export default function DashboardClientPage() {
           </Link>
         </div>
 
-        {/* Active Orders */}
+        
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-xl font-bold flex items-center gap-2">
@@ -140,7 +139,7 @@ export default function DashboardClientPage() {
           </div>
         </div>
 
-        {/* Recommendations */}
+        
         <div className="mt-12">
           <div className="flex justify-between items-end mb-6">
             <h2 className="text-xl font-bold flex items-center gap-2">
@@ -162,7 +161,7 @@ export default function DashboardClientPage() {
                 className="bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 block group"
               >
                 <div className="relative h-48 bg-gray-200 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  
                   <img src={designer.img} alt={designer.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1.5 rounded-xl text-xs font-bold shadow-sm flex items-center gap-1.5">
                     <Image src="/icon-bintang-full.svg" alt="Rating" width={12} height={12} />
@@ -186,9 +185,9 @@ export default function DashboardClientPage() {
         </div>
       </section>
 
-      {/* ─── Right Panel ─── */}
+      
       <aside className="w-80 bg-white border-l border-gray-100 p-8 flex flex-col flex-shrink-0 overflow-y-auto">
-        {/* Budget Card */}
+        
         <div className="bg-[#FFFDF7] border border-yellow-100 p-5 rounded-2xl mb-8 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
           <div className="flex justify-between items-center mb-2">
             <h3 className="text-sm font-bold text-gray-700">Estimasi Anggaran Proyek</h3>
@@ -198,7 +197,7 @@ export default function DashboardClientPage() {
           <p className="text-[10px] text-gray-400">*Total dari semua pesanan aktif</p>
         </div>
 
-        {/* Notifications */}
+        
         <div>
           <div className="flex justify-between items-center mb-6">
             <h3 className="font-bold text-gray-800">Notifikasi Terkini</h3>

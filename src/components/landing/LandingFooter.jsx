@@ -12,10 +12,10 @@ const FOOTER_LINKS = {
 export function LandingFooter() {
   return (
     <footer style={{ backgroundColor: "#1A1A18", borderRadius: "32px 32px 0 0", overflow: "hidden" }}>
-      {/* CTA section */}
+      
       <div style={{ padding: "80px 60px 60px", maxWidth: "1280px", margin: "0 auto" }}>
         <div className="footer-cta-grid">
-          {/* Left text */}
+          
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             <h2
               style={{
@@ -65,7 +65,7 @@ export function LandingFooter() {
             </a>
           </div>
 
-          {/* Right image */}
+          
           <div
             style={{
               position: "relative",
@@ -85,10 +85,10 @@ export function LandingFooter() {
         </div>
       </div>
 
-      {/* Divider */}
+      
       <div style={{ borderTop: "1px solid rgba(253,250,246,0.1)", margin: "0 60px" }} />
 
-      {/* Footer links */}
+      
       <div style={{ padding: "48px 60px 40px", maxWidth: "1280px", margin: "0 auto" }}>
         <div className="footer-links-grid">
           {Object.entries(FOOTER_LINKS).map(([category, links]) => (
@@ -127,7 +127,7 @@ export function LandingFooter() {
             </div>
           ))}
 
-          {/* Brand mark */}
+          
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "flex-end" }}>
             <span
               style={{

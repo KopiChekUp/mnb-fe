@@ -16,7 +16,7 @@ export function Hero() {
           maxHeight: "860px",
         }}
       >
-        {/* Background image */}
+        
         <Image
           src="/background-auth-sec.svg"
           alt="Contemporary interior"
@@ -25,7 +25,7 @@ export function Hero() {
           priority
         />
 
-        {/* Left gradient overlay */}
+        
         <div
           style={{
             position: "absolute",
@@ -33,7 +33,7 @@ export function Hero() {
             background: "linear-gradient(to right, rgba(26,26,24,0.55) 0%, transparent 65%)",
           }}
         />
-        {/* Bottom gradient overlay */}
+        
         <div
           style={{
             position: "absolute",
@@ -42,7 +42,7 @@ export function Hero() {
           }}
         />
 
-        {/* Big headline */}
+        
         <h1
           style={{
             position: "absolute",
@@ -61,7 +61,7 @@ export function Hero() {
           Contemporary.
         </h1>
 
-        {/* Bottom-left glassmorphism info card */}
+        
         <div
           style={{
             position: "absolute",
@@ -109,7 +109,7 @@ export function Hero() {
           </a>
         </div>
 
-        {/* Bottom-center mini thumbnail card */}
+        
         <div
           style={{
             position: "absolute",
@@ -132,7 +132,7 @@ export function Hero() {
           />
         </div>
 
-        {/* Bottom-right circular decoration */}
+        
         <div
           style={{
             position: "absolute",
@@ -181,7 +181,7 @@ function CircularText({ text }) {
           <textPath href="#circle-path">{text}</textPath>
         </text>
       </svg>
-      {/* Center arrow */}
+      
       <div
         style={{
           position: "absolute",

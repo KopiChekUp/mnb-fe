@@ -7,7 +7,7 @@ export default function ModernMinimalistCard() {
   return (
     <section style={{ padding: "40px", maxWidth: "1280px", margin: "0 auto", backgroundColor: "#F5F0E8" }}>
       <div style={{ display: "flex", gap: "24px", flexDirection: "row", flexWrap: "wrap" }}>
-        {/* Left Side (Main Image with Cutout effect) */}
+        
         <div style={{ flex: "1 1 60%", minWidth: "300px", position: "relative", height: "600px" }}>
           <div
             style={{
@@ -29,7 +29,7 @@ export default function ModernMinimalistCard() {
             />
           </div>
 
-          {/* Cutout Overlay (3 Stepped Waterfall) */}
+          
           <div
             style={{
               position: "absolute",
@@ -40,7 +40,7 @@ export default function ModernMinimalistCard() {
               alignItems: "flex-start",
             }}
           >
-            {/* Step 1: Georgeus Interior */}
+            
             <div
               style={{
                 position: "relative",
@@ -49,12 +49,12 @@ export default function ModernMinimalistCard() {
                 borderTopRightRadius: "32px",
               }}
             >
-              {/* 1st Lekukan: Sudut Kiri Atas (image left edge to Step 1 top edge) */}
+              
               <svg width="32" height="32" viewBox="0 0 32 32" style={{ position: "absolute", top: "-32px", left: 0, pointerEvents: "none" }}>
                 <path d="M 0 0 L 0 32 L 32 32 A 32 32 0 0 1 0 0 Z" fill="#F5F0E8" />
               </svg>
 
-              {/* Inner Curve to Step 2 */}
+              
               <svg width="32" height="32" viewBox="0 0 32 32" style={{ position: "absolute", bottom: 0, right: "-32px", pointerEvents: "none" }}>
                 <path d="M 0 0 L 0 32 L 32 32 A 32 32 0 0 1 0 0 Z" fill="#F5F0E8" />
               </svg>
@@ -74,7 +74,7 @@ export default function ModernMinimalistCard() {
               </div>
             </div>
 
-            {/* Step 2: Modern */}
+            
             <div
               style={{
                 position: "relative",
@@ -83,7 +83,7 @@ export default function ModernMinimalistCard() {
                 borderTopRightRadius: "32px",
               }}
             >
-              {/* Inner Curve to Step 3 */}
+              
               <svg width="32" height="32" viewBox="0 0 32 32" style={{ position: "absolute", bottom: 0, right: "-32px", pointerEvents: "none" }}>
                 <path d="M 0 0 L 0 32 L 32 32 A 32 32 0 0 1 0 0 Z" fill="#F5F0E8" />
               </svg>
@@ -103,7 +103,7 @@ export default function ModernMinimalistCard() {
               </h2>
             </div>
 
-            {/* Step 3: Minimalist */}
+            
             <div
               style={{
                 position: "relative",
@@ -125,7 +125,7 @@ export default function ModernMinimalistCard() {
               >
                 Minimalist
               </h2>
-              {/* Inner Curve to Bottom Edge of Image */}
+              
               <svg width="32" height="32" viewBox="0 0 32 32" style={{ position: "absolute", bottom: 0, right: "-32px", pointerEvents: "none" }}>
                 <path d="M 0 0 L 0 32 L 32 32 A 32 32 0 0 1 0 0 Z" fill="#F5F0E8" />
               </svg>
@@ -133,9 +133,9 @@ export default function ModernMinimalistCard() {
           </div>
         </div>
 
-        {/* Right Side (Stacked Cards) */}
+        
         <div style={{ flex: "1 1 35%", display: "flex", flexDirection: "column", gap: "24px", minWidth: "300px" }}>
-          {/* Top Card */}
+          
           <div
             style={{
               backgroundColor: "#EAE7E0",
@@ -189,7 +189,7 @@ export default function ModernMinimalistCard() {
             </h3>
           </div>
 
-          {/* Bottom Card */}
+          
           <div
             style={{
               position: "relative",
@@ -205,7 +205,7 @@ export default function ModernMinimalistCard() {
               fill
               style={{ objectFit: "cover" }}
             />
-            {/* Gradient Overlay for better readability */}
+            
             <div
               style={{
                 position: "absolute",
@@ -251,7 +251,7 @@ export default function ModernMinimalistCard() {
                 Indulge in the artistry of everyday living
               </p>
             </div>
-            {/* Arrow icon button bottom right */}
+            
             <div
               style={{
                 position: "absolute",

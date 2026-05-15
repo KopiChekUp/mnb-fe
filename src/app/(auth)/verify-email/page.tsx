@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 
 export default function VerifyEmailPage() {
   return (
-    // Suspense dibutuhkan karena VerifyEmailForm menggunakan useSearchParams()
     <Suspense fallback={<div className="w-full flex items-center justify-center"><p>Memuat...</p></div>}>
       <VerifyEmailForm />
     </Suspense>

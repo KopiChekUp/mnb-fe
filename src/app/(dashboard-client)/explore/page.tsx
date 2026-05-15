@@ -28,7 +28,7 @@ export default function ExplorePage() {
 
   return (
     <div className="flex flex-1 flex-col h-full overflow-hidden bg-gray-50">
-      {/* Header Search */}
+      
       <header className="bg-white border-b border-gray-100 px-8 py-4 flex items-center justify-between flex-shrink-0 z-10">
         <div className="flex-1 max-w-3xl flex items-center bg-gray-50 rounded-full px-5 py-2.5 border border-gray-200 focus-within:border-yellow-500 focus-within:ring-2 focus-within:ring-yellow-100 transition-all">
           <Image src="/icon-search.svg" alt="Search" width={20} height={20} className="mr-3 opacity-40" />
@@ -48,9 +48,9 @@ export default function ExplorePage() {
         </div>
       </header>
 
-      {/* Filter + Results */}
+      
       <div className="flex-1 overflow-hidden flex">
-        {/* Filter Sidebar */}
+        
         <aside className="w-72 bg-white border-r border-gray-100 p-6 overflow-y-auto flex-shrink-0">
           <div className="flex justify-between items-center mb-6">
             <h2 className="font-extrabold text-lg text-black">Filter</h2>
@@ -62,7 +62,7 @@ export default function ExplorePage() {
             </button>
           </div>
 
-          {/* Design Style */}
+          
           <div className="mb-8">
             <h3 className="text-sm font-bold text-gray-800 mb-3">Gaya Desain</h3>
             <div className="grid grid-cols-2 gap-2">
@@ -85,7 +85,7 @@ export default function ExplorePage() {
             </div>
           </div>
 
-          {/* Budget */}
+          
           <div className="mb-8">
             <h3 className="text-sm font-bold text-gray-800 mb-3">Anggaran (IDR)</h3>
             <div className="text-yellow-600 font-extrabold text-sm mb-3">Hingga Rp {budget} Juta</div>
@@ -104,7 +104,7 @@ export default function ExplorePage() {
             </div>
           </div>
 
-          {/* Location */}
+          
           <div className="mb-8">
             <h3 className="text-sm font-bold text-gray-800 mb-3">Lokasi</h3>
             <div className="relative">
@@ -119,7 +119,7 @@ export default function ExplorePage() {
             </div>
           </div>
 
-          {/* Min Rating */}
+          
           <div className="mb-8">
             <h3 className="text-sm font-bold text-gray-800 mb-3">Rating Minimal</h3>
             <div className="grid grid-cols-2 gap-3">
@@ -143,7 +143,7 @@ export default function ExplorePage() {
           </div>
         </aside>
 
-        {/* Results */}
+        
         <section className="flex-1 p-8 bg-gray-50 overflow-y-auto">
           <div className="flex justify-between items-center mb-6">
             <div className="flex items-baseline gap-3">

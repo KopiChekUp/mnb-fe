@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ResetPasswordPage() {
   return (
     <div className="w-full lg:w-1/2 flex flex-col justify-center px-10 sm:px-20 lg:px-24 xl:px-32 relative z-10">
-      {/* Logo */}
+      
       <Link href="/" className="mb-8 inline-block">
         <Image
           src="/logo.png"

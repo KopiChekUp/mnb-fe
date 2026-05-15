@@ -21,7 +21,7 @@ export default function DashboardDesainerPage() {
       />
 
       <div className="flex-1 overflow-y-auto px-8 pb-10">
-        {/* Stat Cards */}
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 pt-6">
           {statistik.map((stat) => (
             <StatCard
@@ -36,13 +36,13 @@ export default function DashboardDesainerPage() {
           ))}
         </div>
 
-        {/* Chart + Popular Works */}
+        
         <div className="flex flex-col lg:flex-row gap-6 mb-6">
           <RevenueChart />
           <PopularWorks items={karyaPopuler} />
         </div>
 
-        {/* Recent Orders */}
+        
         <RecentOrders orders={pesananTerbaru} />
       </div>
     </main>

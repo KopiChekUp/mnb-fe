@@ -1,9 +1,8 @@
-// AuthBanner — Server Component (no interactivity needed)
 export default function AuthBanner() {
   return (
     <div className="hidden lg:block lg:w-1/2 p-4">
       <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        
         <img
           src="/background-auth-sec.svg"
           alt="Match n Build — Wujudkan Ruang Impian Anda"
